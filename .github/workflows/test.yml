@@ -1,0 +1,14 @@
+name: Basic CI-CD Pipeline
+
+on: 
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs: 
+  console-on-CI:
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: echo "Hey, the CI pipeline working fine!"
